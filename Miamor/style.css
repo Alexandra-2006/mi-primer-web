@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(to bottom right, #ffe0ec, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+  animation: aparecer 1.5s ease-in;
+}
+
+h1 {
+  color: #e91e63;
+}
+
+#mensaje {
+  font-size: 1.2rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

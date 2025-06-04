@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Ti esta web mi ojitos💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Hola, mi ojitos claros esta web la hice para ti💕</h1>
+    <p id="mensaje"></p>
+  </div>
+
+  <script>
+    const texto = "Solo quería decirte que te amo muchísimo. Cuando te veo no paro de pensar que mi felicidad es completa, mis sentimientos hacia tí son como noche en luna llena son tan profundos como el mar, infinitos como la arena. 💖";
+    let i = 0;
+
+    function escribir() {
+      if (i < texto.length) {
+        document.getElementById("mensaje").innerHTML += texto.charAt(i);
+        i++;
+        setTimeout(escribir, 50);
+      }
+    }
+
+    escribir();
+  </script>
+</body>
+</html>
